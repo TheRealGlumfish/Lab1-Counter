@@ -53,4 +53,16 @@ void vbdInitMicIn(int Nsamp);
 
 // get next sample from microphone buffer
 int vbdMicValue();
+
+// Return 0 if no key is pressed, otherwise return ASCII code of key 
+// ... this function is non-blocking and does not actually use Vbuddy
+char vbdGetkey();
+
+// Initialise an internal stop watch in msec on Vbuddy
+void vbdInitWatch();
+
+// Returns elapsed time in msec since last vbdInitWatch() call
+int vbdElapsed();
+
+// ---- End of Vbuddy User Function declarations
 ```
