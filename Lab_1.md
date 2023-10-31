@@ -317,5 +317,6 @@ bin2bcd myDecoder (
 
 endmodule
 ```
-Modify the testbench file **_top_tb.cpp_** accordingly.  
-Modify the **_doit.sh_** file from task 3 to include all the modules (**_top.sv, counter.sv, bin2bcd.sv_** and **_top_tb.sv_**).  Compile and run the Verilated model.  Check that it works according to expectation.
+Modify the **_doit.sh_** file from task 3 to include all the modules (**_top.sv, counter.sv, bin2bcd.sv_** and **_top_tb.cpp_**).  Compile and run the Verilated model.  Check that it works according to expectation.
+
+Note that **top_tb.cpp** is just **counter_tb.cpp** copied over.
